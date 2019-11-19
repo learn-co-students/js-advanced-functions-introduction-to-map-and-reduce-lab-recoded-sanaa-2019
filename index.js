@@ -39,29 +39,24 @@ function mapToSquare(src){
 
 
 
-function reduceToTotal(sourceArray, startingPoint=0){
-
-   for(const element of sourceArray){
-       startingPoint+=element
-   }
-   return startingPoint
-}
-
-function reduceToAllTrue(sourceArray){
-    let startingPoint=true
-
-    for (const element of sourceArray){
-        startingPoint=(startingPoint&&Boolean(element))
+function reduceToTotal(src, startingPoint=0) {
+    let total = startingPoint
+    for (let i = 0; i < src.length; i++ ) {
+      total = total + src[i]
     }
-    return startingPoint
-}
-
-function reduceToAnyTrue(sourceArray){
-    let startingPoint=false
-
-    for (const element of sourceArray){
-        startingPoint=(startingPoint||Boolean(element))
+    return total
+  }
+  
+  function reduceToAllTrue(src) {
+    for (let i = 0; i < src.length; i++ ) {
+      if (!src[i]) return false
     }
-    
-    return startingPoint
-}
+    return true
+  }
+  
+  function reduceToAnyTrue(src) {
+    for (let i = 0; i < src.length; i++ ) {
+      if (src[i]) return true
+    }
+    return false
+  }
