@@ -1,31 +1,33 @@
-function mapToNegativize(arr){
-    let newArr= [];
-    arr.forEach(element => {
-       newArr.push(element*-1);
-    });
-    return newArr;
+function mapToNegativize(src) {
+  let r = []
+  for (let i = 0; i < src.length; i++ ) {
+    r.push(-1 * src[i]) // Unique work
+  }
+  return r
 }
-function mapToNoChange(arr){
-    let newArr = [];
-    arr.forEach(element=>{
-        newArr.push(element);
-    });
-    return newArr;
-
+ 
+function mapToNoChange(src) {
+  let r = []
+  for (let i = 0; i < src.length; i++ ) {
+    r.push(src[i]) // Unique work
+  }
+  return r
 }
-function mapToDouble (arr){
-    let newArr = [];
-    arr.forEach(element => {
-        newArr.push(element*2);
-    });
-    return newArr;
+ 
+function mapToDouble(src) {
+  let r = []
+  for (let i = 0; i < src.length; i++ ) {
+    r.push(2 * src[i]) 
+  }
+  return r
 }
-function mapToSquare (arr){
-    let newArr = [];
-    arr.forEach(element=>{
-        newArr.push(element**2);
-    });
-    return newArr;
+ 
+function mapToSquare(src) {
+  let r = []
+  for (let i = 0; i < src.length; i++ ) {
+    r.push(src[i] * src[i]) 
+  }
+  return r
 }
 function reduceToTotal (array,start = 0 ){
     let sum = start ;
