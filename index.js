@@ -30,11 +30,9 @@ function reduceToTotal(Array,accumulator=0){
 return arr;
 }
 function reduceToAllTrue(Array){
- let arr=Array.every(Array==true);
-if(arr==false){
-  return false
-}else{
-  return true
-}
-  
+   let arr=Array.reduce(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+},0);
+return arr;
+
 }
