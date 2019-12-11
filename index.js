@@ -35,7 +35,7 @@ function reduceToAllTrue(Array){
   return accumulator + 1;
      }
 },0);
-if(arr==0){return true}
+if(typeof(arr)=='undefined'){return true}
 
 
 }
