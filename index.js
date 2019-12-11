@@ -31,7 +31,7 @@ return arr;
 }
 function reduceToAllTrue(Array){
    let arr=Array.reduce(function (accumulator, currentValue) {
-  return accumulator + currentValue;
+  return accumulator + 1;
 },0);
 return arr;
 
