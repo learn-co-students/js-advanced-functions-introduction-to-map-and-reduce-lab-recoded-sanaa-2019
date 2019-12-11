@@ -40,3 +40,14 @@ else return false
 
 
 }
+function reduceToAllTrue(Array){
+   let arr=Array.reduce(function (accumulator, currentValue) {
+     if(currentValue==true){
+  return accumulator + 1;
+     }
+},0);
+if(typeof(arr)=='undefined'){return true}
+else return false
+
+
+}
