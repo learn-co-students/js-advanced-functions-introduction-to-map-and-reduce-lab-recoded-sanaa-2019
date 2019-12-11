@@ -40,7 +40,7 @@ else return false
 
 
 }
-function reduceToAllTrue(Array){
+function reduceToAnyTrue(Array){
    let arr=Array.reduce(function (accumulator, currentValue) {
      if(currentValue==true){
   return accumulator + 1;
