@@ -36,6 +36,7 @@ function reduceToAllTrue(Array){
      }
 },0);
 if(typeof(arr)=='undefined'){return true}
+else return false
 
 
 }
