@@ -47,7 +47,7 @@ function reduceToAnyTrue(Array){
      }
 },0);
 if(typeof(arr)=='undefined'){return false}
-else return false
+else return truee
 
 
 }
