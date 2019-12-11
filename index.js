@@ -31,8 +31,11 @@ return arr;
 }
 function reduceToAllTrue(Array){
    let arr=Array.reduce(function (accumulator, currentValue) {
+     if(currentValue==false){
   return accumulator + 1;
+     }
 },0);
-return arr;
+if(arr==0){return true}
+
 
 }
