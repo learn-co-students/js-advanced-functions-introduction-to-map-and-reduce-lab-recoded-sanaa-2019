@@ -46,7 +46,7 @@ function reduceToAllTrue(Array){
   return accumulator + 1;
      }
 },0);
-if(typeof(arr)=='undefined'){return true}
+if(typeof(arr)=='undefined'){return false}
 else return false
 
 
