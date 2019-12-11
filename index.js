@@ -31,6 +31,6 @@ return arr;
 }
 function reduceToAllTrue(Array){
  return Array.every(Array==true);
-return arr
+
   
 }
